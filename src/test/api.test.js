@@ -19,6 +19,7 @@ describe('Api test', () => {
     })
   })
 
+  // Test weather endopoint
   describe( 'GET /weather/', () => {
     it('Should get weather data', (done) => {
       chai.request(server)

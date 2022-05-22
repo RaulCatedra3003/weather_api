@@ -3,8 +3,8 @@ function coorValidationMiddleware (req, res, next) {
     const { coor } = req.query
     if (/^((-?|\+?)?\d+(\.\d+)?),\s*((-?|\+?)?\d+(\.\d+)?)$/gi.test(coor)) {
       const [lat, lon] = coor.split(',')
-      req.body.lat = parseFloat(lat)
-      req.body.lon = parseFloat(lon)
+      req.body.lat = parseFloat(parseFloat(lat).toFixed(4))
+      req.body.lon = parseFloat(parseFloat(lon).toFixed(4))
       next()
     } else {
       res.status(400).send({ message: 'Invalid parameters' })
