@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "6b443f02-841c-485c-8101-7b7d18381553",
+		"name": "Weather_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/weather?coor=37.132019, -3.539184",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/weather?coor=37.132019, -3.539184",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "coor",
+							"value": "37.132019, -3.539184"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/weather/13:00?coor=37.132519, -3.539184",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/weather/13:00?coor=37.132519, -3.539184",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weather",
+						"13:00"
+					],
+					"query": [
+						{
+							"key": "coor",
+							"value": "37.132519, -3.539184"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
